@@ -67,3 +67,8 @@ backgroundPlane = plane;
 import { backgroundPlane } from './scene.js';
 
 backgroundPlane.material.uniforms.uTime.value = time;
+    
+export let backgroundPlane = null;
+
+backgroundPlane = plane;
+
