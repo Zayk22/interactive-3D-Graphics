@@ -60,3 +60,10 @@ export function setupScene() {
 
 export function updateBackgroundTime(time) {
     const plane = document.querySelector('canvas').parentElement; 
+    export let backgroundPlane = null;
+
+backgroundPlane = plane;
+
+import { backgroundPlane } from './scene.js';
+
+backgroundPlane.material.uniforms.uTime.value = time;
