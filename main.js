@@ -68,3 +68,6 @@ function onWindowResize() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     composer.setSize(window.innerWidth, window.innerHeight);
 }
+import { backgroundPlane } from './scene.js';
+
+backgroundPlane.material.uniforms.uTime.value = time;
